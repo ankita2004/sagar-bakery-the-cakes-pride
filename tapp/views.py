@@ -146,7 +146,7 @@ def auth_view(request):
         return render(request,'login.html',{'msg':'invalid password'})
 def customize(request):
     print('hi')
-    if request.method=="POST":
+    if request.method =="POST":
         form=cust(request.POST)
         print('1')
         if form.is_valid():
@@ -155,7 +155,7 @@ def customize(request):
             cd=form.cleaned_data
             subject='sagar bakery'
             msg='your enquiry has been received,we will reply you soon'
-            send_mail(subject,msg,'soni.ankita2004@gmail.com',[cd['em']])
+            send_mail(subject,msg,'sonianki2004@gmail.com',[cd['em']])
             #subject='sagar bakery'
             #msg='your enquiry has been received,we will reply you soon'
             #send_mail(subject,msg,'sonianki2004@gmail.com',[cd['em']]) #email is fetched from the checkout form that customer is submited
@@ -165,6 +165,7 @@ def customize(request):
             return HttpResponseRedirect('/')
     else:
         form=cust()
+        print('invalid details')
     return render(request,'customize.html',{'form':form})
 
 

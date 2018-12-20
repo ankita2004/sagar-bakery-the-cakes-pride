@@ -21,18 +21,19 @@
         <div class="container">
             <!-- Codrops top bar -->
             <div class="codrops-top">
-                <a href="/">
+            <b><font size="5">  <a href="/">
                   HOME
-                </a>
+                </a></font></b>
                 <span class="right">
-                    <a href="/menu/"> MENU
+                      <b><font size="5">   <a href="/menu/"> MENU
 
-                    </a>
+                    </a></font></b>
                 </span>
                 <div class="clr"></div>
             </div><!--/ Codrops top bar -->
             <header>
-                <h1 align='center'><b><font color='blue'>Login and Registration Form</font></b></h1>
+                <h1 align='center'><b><font color='#C70039'>Login and Registration Form</font></b></h1>
+                <h1><b><marquee><font color='#C70039'>(Login for new arrivals.We mail you the details for the latest updates.)</font></marquee></b></h2>
 {% if msg %}
 <h2>{{msg}}</h2>
 {% endif %}
@@ -62,8 +63,11 @@
 									Not a member yet ?
 									<a href="#toregister" class="to_register">Join us</a>
 								</p>
+
                             </form>
+
                         </div>
+
 
                         <div id="register" class="animate form">
                             <form  action="{% url 'signup' %}" autocomplete="on" method="POST">{% csrf_token%}

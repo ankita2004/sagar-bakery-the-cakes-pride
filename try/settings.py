@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'sonianki2004@gmail.com'
-EMAIL_HOST_PASSWORD = 'ethosome' #Password
+EMAIL_HOST_PASSWORD = 'etho@2004' #Password
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
